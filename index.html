@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <img src="./images/logo.svg" alt="Splitter Logo" class="splitter__img" />
+
+      <div class="splitter">
+        <div class="splitter__amount">
+          <div class="splitter__form">
+            <label for="splitter-input" class="splitter__form-label">
+              Bill
+            </label>
+
+            <input
+              type="text"
+              name="splitter-input"
+              id="splitter-input"
+              class="splitter__form-input"
+              placeholder="0"
+            />
+
+            <img
+              src="./images/icon-dollar.svg"
+              alt="Icon Dollar"
+              class="splitter__form-img"
+            />
+          </div>
+
+          <div class="splitter__tip">
+            <h2 class="splitter__tip-label">Select Tip %</h2>
+
+            <div class="splitter__buttons">
+              <button class="splitter__button" data-value="5" id="five-percent">
+                5%
+              </button>
+
+              <button class="splitter__button" data-value="10" id="ten-percent">
+                10%
+              </button>
+
+              <button
+                class="splitter__button"
+                data-value="15"
+                id="fifteen-percent"
+              >
+                15%
+              </button>
+
+              <button
+                class="splitter__button"
+                data-value="25"
+                id="twentyFive-percent"
+              >
+                25%
+              </button>
+
+              <button
+                class="splitter__button"
+                data-value="50"
+                id="fifty-percent"
+              >
+                50%
+              </button>
+
+              <input
+                type="text"
+                placeholder="Custom"
+                class="splitter__button-input"
+                id="customized-percent"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="splitter__person">
+            <div class="splitter__person-error">
+              <h3 class="splitter__person-label">Number of People</h3>
+              <p class="splitter__person-text" id="error-text"></p>
+            </div>
+
+            <input
+              type="number"
+              name="person-input"
+              id="person-input"
+              class="splitter__person-input"
+              placeholder="0"
+            />
+
+            <img
+              src="./images/icon-person.svg"
+              alt="Icon person"
+              class="splitter__person-img"
+            />
+          </div>
+        </div>
+
+        <div class="splitter__result">
+          <div class="splitter__result-data">
+            <div class="splitter__result-amount">
+              <div class="splitter__result-info">
+                <h4 class="splitter__result-title">
+                  Tip Amount
+                  <span>/ person</span>
+                </h4>
+              </div>
+
+              <div class="splitter__result-value">
+                <span id="tip-amount" class="splitter__result-amount">
+                  $0.00
+                </span>
+              </div>
+            </div>
+
+            <div class="splitter__result-total">
+              <div class="splitter__result-info">
+                <h4 class="splitter__result-title">
+                  Total
+                  <span>/ person</span>
+                </h4>
+              </div>
+
+              <div class="splitter__result-value">
+                <span id="total-amount" class="splitter__result-amount">
+                  $0.00
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="splitter__reset" id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

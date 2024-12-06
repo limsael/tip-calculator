@@ -1,0 +1,66 @@
+// ============== Variables ===============
+
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// ============== General Styles ===============
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Style */
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: $light-grayish-cyan;
+}
+
+input {
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: $very-light-grayish-cyan;
+  color: $very-dark-cyan;
+  padding: 0.4rem 0.75rem;
+  text-align: right;
+  border-radius: 0.6rem;
+  transition: border 0.1s ease;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $strong-cyan;
+  }
+}
+
+// /* For WebKit-based browsers (Chrome, Safari, Edge) */
+// input[type=number]::-webkit-outer-spin-button,
+// input[type=number]::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
+
+// /* For Firefox */
+// input[type=number] {
+//   appearance: textfield;
+//     -moz-appearance: textfield;
+// }
+
+input,
+button {
+  font-family: inherit;
+}
+
+/*  Style by order of apearence */
